@@ -11,15 +11,21 @@
     "server": "nodemon backend/server.js"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
     "bcryptjs": "^3.0.3",
     "colors": "^1.4.0",
+    "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.9.4"
+    "mongoose": "^9.9.4",
+    "react-redux": "^9.3.0",
+    "react-router-dom": "^7.18.3",
+    "web-vitals": "^6.2.1"
   },
   "devDependencies": {
+    "eslint-plugin-jest": "^29.16.6",
     "nodemon": "^3.1.14"
   }
 }
