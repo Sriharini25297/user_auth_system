@@ -35,7 +35,7 @@ const UpdateGoals = asyncHandler(async (req,res)=>{
         res.status(401);
         throw new Error("User not authorized");
     }
-    const updatedGoal = await Goal.findByIdAndUpdate(req.params.id,req.body,{new: true});
+    const updatedGoal = await Goal.findByIdAndUpdate(req.params.id,req.body,{returnDocument : 'after'});
     res.status(200).send(updatedGoal);
 });
 const DeleteGoals = asyncHandler(async (req,res)=>{
